@@ -19,7 +19,7 @@ client.on('message', message => {
 });
 
 client.on('messageReactionAdd', (reaction, user) => {
-  if (reaction.emoji.name === "642219548044558347") {
+  if (reaction.emoji.name === "🍆") {
     member.addRole("565667223600103435")
   }
 });
