@@ -50,4 +50,5 @@ client.on('messageReactionAdd', (reaction, user) => {
     message.member.addRole('565667223600103435');
     message.channel.send('test');
   }
+  else return;
 });
