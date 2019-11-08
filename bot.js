@@ -47,6 +47,7 @@ client.on('message', message => {
 // https://discordjs.guide/popular-topics/collectors.html#basic-reaction-collector
 client.on('messageReactionAdd', (reaction, user) => {
   if (reaction.emoji.name === "642242790855802881") {
-    message.member.addRole('565667223600103435');
+//    message.member.addRole('565667223600103435');
+     message.react("642242790855802881");
   }
 });
