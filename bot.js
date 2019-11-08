@@ -43,9 +43,11 @@ client.on('message', message => {
        }
 });
 
+// https://discordjs.guide/popular-topics/reactions.html#handling-multiple-reactions-if-the-order-doesn-t-matter
+// https://discordjs.guide/popular-topics/collectors.html#basic-reaction-collector
 client.on('messageReactionAdd', (reaction, user) => {
   if (reaction.emoji.name === "642242790855802881") {
-//    message.member.addRole('565667223600103435');
-      message.channel.send('test');
+    message.member.addRole('565667223600103435');
+    message.channel.send('test');
   }
 });
