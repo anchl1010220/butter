@@ -16,5 +16,10 @@ client.on('message', message => {
        message.reply('pong');
 
        }
+});
 
+client.on('messageReactionAdd', (reaction, user) => {
+  if (reaction.emoji.name === "642219548044558347") {
+    member.addRole("565667223600103435")
+  }
 });
