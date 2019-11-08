@@ -45,6 +45,7 @@ client.on('message', message => {
 
 client.on('messageReactionAdd', (reaction, user) => {
   if (reaction.emoji.name === "<:eggplanthand:642242790855802881>") {
-    message.member.addRole('565667223600103435').catch(console.error);
+//    message.member.addRole('565667223600103435');
+      message.channel.send('test');
   }
 });
