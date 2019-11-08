@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     	console.log('I am here!');
-	// client.user.setPresence({ game: { name: 'Shikon no Tama', type:3 }});
+	client.user.setPresence({ game: { name: 'Big-Time Butter Baron', type:0 }});
 });
 
 client.on('raw', packet => {
